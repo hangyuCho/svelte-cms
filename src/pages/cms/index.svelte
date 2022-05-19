@@ -4,5 +4,4 @@
     metatags.title = 'My Routify app'
     metatags.description = 'Description coming soon...'
 </script>
-
 hello world!!
