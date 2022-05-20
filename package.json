@@ -11,14 +11,21 @@
         "build:vite": "vite build"
     },
     "devDependencies": {
+        "@mdi/js": "^6.7.96",
         "@roxi/routify": "^2.18.4",
         "@sveltejs/vite-plugin-svelte": "^1.0.0-next.34",
         "autoprefixer": "^10.4.2",
+        "cass": "^0.0.5",
+        "font-awesome": "^4.7.0",
+        "node-sass": "^7.0.1",
         "npm-run-all": "^4.1.5",
-        "postcss": "^8.4.5",
+        "postcss": "^8.4.14",
         "postcss-import": "^14.0.2",
         "svelte": "^3.45.0",
         "svelte-preprocess": "^4.10.1",
         "vite": "^2.7.10"
+    },
+    "dependencies": {
+        "svelte-materialify": "^0.3.11"
     }
 }

@@ -3,3 +3,4 @@
 yarn.lock
 .history
 dist
+package-lock.json

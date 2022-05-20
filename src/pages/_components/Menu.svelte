@@ -1,37 +1,48 @@
-<div class="menu-container">
-  <div class="menu-header">
-    <div class="menu-header-logo"></div>
-    <div class="menu-header-title-area">
-      <div class="menu-header-title">Strapi Dashboard</div>
-      <div class="menu-header-desc">Workplace</div>
-    </div>
-  </div>
-  <div class="menu-body">
-    menu-body!
-  </div>
-  <div class="menu-footer">
-    menu-footer!
-  </div>
+<script>
+  import { NavigationDrawer, List, ListItem, Button, Icon, MaterialApp, Avatar, Divider } from 'svelte-materialify';
+  import { mdiViewDashboard, mdiAccountBox, mdiGavel } from '@mdi/js';
+  let mini = true;
+  function mouseenter() {
+    mini = false;
+  }
+  function mouseleave() {
+    mini = true;
+  }
+</script>
+
+<MaterialApp>
+  <div class="d-inline-block" on:mouseenter={mouseenter} on:mouseleave={mouseleave}>
+    <NavigationDrawer absolute left {mini}>
+    <ListItem>
+      <span slot="prepend" class="ml-n2">
+        <Avatar size={40}><img src="//picsum.photos/200" alt="profile" /></Avatar>
+      </span>
+      Mudit Somani
+    </ListItem>
+    <Divider />
+    <List>
+      <ListItem>
+        <span slot="prepend">
+          <Icon path={mdiViewDashboard} />
+        </span>
+        Dashboard
+      </ListItem>
+      <ListItem>
+        <span slot="prepend">
+          <Icon path={mdiAccountBox} />
+        </span>
+        Account
+      </ListItem>
+      <ListItem>
+        <span slot="prepend">
+          <Icon path={mdiGavel} />
+        </span>
+        Admin
+      </ListItem>
+    </List>
+    <span slot="append" class="pa-2">
+      <Button block>Logout</Button>
+    </span>
+  </NavigationDrawer>
 </div>
-<style>
-  .menu-container{
-    width: 13rem;
-  }
-  .menu-header {
-    padding: 0.6rem;
-    display: flex;
-    justify-content: space-between;
-  }
-  .menu-header-logo {
-    height: 2rem;
-    width: 2rem;
-    background-color: lightblue;
-    margin: 0.4rem;
-  }
-  .menu-header-title-area {
-    display: flex;
-    flex-direction: column;
-  }
-  .menu-header-title { }
-  .menu-header- { }
-</style>
+</MaterialApp>
