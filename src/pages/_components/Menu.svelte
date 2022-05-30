@@ -17,7 +17,7 @@
       <span slot="prepend" class="ml-n2">
         <Avatar size={40}><img src="//picsum.photos/200" alt="profile" /></Avatar>
       </span>
-      Mudit Somani
+      마호샵 관리자화면
     </ListItem>
     <Divider />
     <List>
@@ -25,19 +25,19 @@
         <span slot="prepend">
           <Icon path={mdiViewDashboard} />
         </span>
-        Dashboard
+        내 쇼핑몰 정보
       </ListItem>
       <ListItem>
         <span slot="prepend">
           <Icon path={mdiAccountBox} />
         </span>
-        Account
+        간단 등록
       </ListItem>
       <ListItem>
         <span slot="prepend">
           <Icon path={mdiGavel} />
         </span>
-        Admin
+        상품목록
       </ListItem>
     </List>
     <span slot="append" class="pa-2">

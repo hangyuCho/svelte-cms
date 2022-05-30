@@ -1,8 +1,10 @@
 <script>
     import { metatags } from '@roxi/routify'
+    import Summary from './_components/summary/Summary.svelte'
     
-    metatags.title = 'My Routify app'
-    metatags.description = 'Description coming soon...'
+    metatags.title = 'cms'
+    metatags.description = 'cms page'
 </script>
+<Summary/>
 
-hello world!!
+

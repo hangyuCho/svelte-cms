@@ -1,14 +1,25 @@
 <script>
+	import { leftover } from '@roxi/routify';
   import Menu from './_components/Menu.svelte';
+  import Navbar from './_components/navbar/Navbar.svelte'
 </script>
-<div class="menu-container">
-  <Menu/>
-  <!-- routify:options preload="proximity" -->
-  <slot />
+<div class="layout">
+<Menu/>
+  <div class="layout-container">
+      <div class="nav">
+        <Navbar/>
+      </div>
+      <!-- routify:options preload="proximity" -->
+      <slot />
+  </div>
 </div>
 <style>
-  .menu-container {
-    font-size: 1rem;
-    font-weight: 400;
+  .layout {
+    display: flex;
   }
+  .layout-container {
+    flex: 6;
+    margin-left: 3.5em;
+  }
+
 </style>
